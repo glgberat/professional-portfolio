@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #1e2906;
-    --secondary-color: #024e76;
-    --tertiary-color: #a3e996;
+    --primary-color: #3a3f3b;
+    --secondary-color: #e6efe8;
+    --tertiary-color: #7ec76fcb;
   } 
   
   * {
@@ -11,14 +11,12 @@
   }
 
   body {
-    /* more on this crazy alphanumerical value in a minute! */
     color: var(--tertiary-color);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-color);
   }
 
 header {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     padding: 20px 35px;
       background-color: var(--tertiary-color);
@@ -49,6 +47,7 @@ header {
 
       header nav {
         margin: 8px 0;
+        background-color: none;
       }
     
       header nav ul {
@@ -61,7 +60,7 @@ header {
 
       header nav ul li a {
         margin: 0 30px;
-        font-weight:bold;
+        font-weight: bold;
         font-size: 1.55vw;
         text-decoration: underline;
     
@@ -69,7 +68,7 @@ header {
 
       /* Hero Style Start */
 .hero {
-    padding: 60px;
+    padding: 100px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -77,11 +76,96 @@ header {
      background-size: cover;
      background-position: 80%;
      background-attachment: fixed;
+     margin-bottom:30px ;
 }
 
 .hero h2 {
-    position: absolute;
-    right: 65px;
-    top: 150px;
+    position: relative;
+    left:480px;
+    top: 60px;
     color: var(--primary-color);
 }
+
+.bio {
+  width: 100%;
+  margin: 20px, 3px,30px,auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  box-sizing:none;
+}
+
+.vertical-border {
+  margin: auto, 1px; 
+  padding: 2% ;
+  text-align: right;
+  font-size: 50px;
+  width: 25%;
+  
+  
+}
+
+.bio-details {
+  display: flex;
+  padding: 4% ;
+ text-align: left;
+  width:75%;
+  border-left: 6px solid rgb(25, 32, 26) ;
+
+}
+
+
+.works {
+  width: 100%;
+  margin: 20px, 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  box-sizing: none;
+}
+
+.works-vertical-border {
+  margin: auto, 1px; 
+  padding: 2% ;
+  text-align: right;
+  font-size: 50px;
+  width: 25%;
+  
+  
+}
+
+.projects {
+  display: flex;
+  padding: 4% ;
+ text-align: left;
+  width:75%;
+  border-left: 6px solid rgb(25, 32, 26) ;
+
+}
+
+.contact {
+  width: 100%;
+  margin: 20px, 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  box-sizing: none;
+}
+
+.contacts ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.contact ul li a {
+  margin: 0 30px;
+  font-weight: bold;
+  font-size: 1.55vw;
+  text-decoration: underline;
+  color: var(--primary-color);
+
+}
+
+
